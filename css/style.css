@@ -1,0 +1,274 @@
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(../fonts/gilroy/gilroy-regular.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../fonts/gilroy/gilroy-medium.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Hard;
+  src: url("../fonts/gilroy/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: Chronicle;
+  src: url("../fonts/chronicle-display/Chronicle Display Black.otf");
+}
+
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url("../fonts/gilroy/gilroy-heavy.ttf");
+}
+
+@font-face {
+  font-family: Chronicle;
+  src: url("../fonts/chronicle-display/Chronicle Display Semibold.otf");
+}
+
+* {
+  paddong: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.header_image {
+  background: url("../images/all.png") no-repeat center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.header {
+  padding-top: 50px;
+}
+
+.header .logo {
+  font-family: Chronicle;
+  color: white;
+  font-size: 32px;
+}
+
+.header .header__info {
+  display: block;
+  margin: 0 auto;
+}
+
+.header .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 250px;
+  margin: auto;
+  font-family: Gilroy-Hard;
+}
+
+.header .navbar-nav a {
+  color: white;
+}
+
+.header .account {
+  font-family: Gilroy-Hard;
+  color: white;
+}
+
+.header .account .account_icon {
+  font-size: 190px;
+}
+
+#intro {
+  padding-top: 180px;
+}
+
+#intro .container--intro {
+  padding-bottom: 630px;
+  padding-top: 100px;
+}
+
+#intro .container--intro .links a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#intro .container--intro .links .links_follow_us {
+  margin-right: 10px;
+}
+
+#intro .container--intro .links .links_insta {
+  margin-right: 10px;
+}
+
+#intro .container--intro .links .links_rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  min-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-top: 90%;
+}
+
+#intro .container--intro .links .links_twitter, #intro .container--intro .links .links_insta {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#intro .container--intro .intro--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#intro .container--intro .intro--title .intro_top_title {
+  font-family: Gilroy-Heavy;
+  text-transform: uppercase;
+  font-style: 18px;
+  letter-spacing: 6px;
+  color: #FBD784;
+  padding-left: 105px;
+  position: relative;
+}
+
+#intro .container--intro .intro--title .intro_top_title p:before {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 100px;
+  background-color: #FBD784;
+  bottom: 55%;
+  left: -3%;
+  z-index: 2;
+}
+
+#intro .container--intro .intro--title .intro_title {
+  font-family: Chronicle;
+  color: white;
+  font-size: 88px;
+  max-width: 900px;
+}
+
+#intro .container--intro .intro--title .intro_bottom_title {
+  position: relative;
+}
+
+#intro .container--intro .intro--title .intro_bottom_title a {
+  color: white;
+  text-decoration: none;
+  font-style: 18px;
+  font-family: Gilroy-Heavy;
+}
+
+#intro .container--intro .intro--title .intro_bottom_title .intro_bottom_title_arrow {
+  position: absolute;
+  font-size: 30px;
+  font-family: Gilroy-Medium;
+  color: white;
+  top: -30%;
+  right: -30%;
+  -webkit-transition: all linear 0.6s;
+  transition: all linear 0.6s;
+}
+
+#intro .container--intro .intro--title .intro_bottom_title a:hover + span {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: .2;
+}
+
+#intro .container--intro .nav_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#intro .container--intro .nav_link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+#intro .container--intro .nav_link ul li {
+  border-right: 3px solid rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 90px;
+  min-height: 70px;
+}
+
+#intro .container--intro .nav_link ul li a {
+  text-decoration: none;
+  color: white;
+  font-style: 18px;
+  font-family: Gilroy-Hard;
+}
+
+#intro .container--intro .nav_link ul li.active {
+  border-right: 3px solid white;
+}
+/*# sourceMappingURL=style.css.map */

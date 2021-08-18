@@ -1,0 +1,164 @@
+@import './variables';
+@import './fonts';
+
+*
+    paddong: 0
+    margin: 0
+    box-sizing: border-box
+
+body::-webkit-scrollbar
+    width: 0
+
+.header_image
+    background: url('../images/all.png') no-repeat center
+    height: 100%
+    width: 100%
+    background-size: cover
+
+.header
+    padding-top: 50px
+
+    .logo
+        font-family: Chronicle
+        color: white
+        font-size: 32px
+
+    .header__info
+        display: block
+        margin: 0 auto
+
+    .navbar-nav
+        flex-direction: row
+        justify-content: space-between
+        max-width: 250px
+        margin: auto
+        font-family: Gilroy-Hard
+        a
+            color: white
+    .account
+        font-family: Gilroy-Hard
+        color: white
+        .account_icon
+            font-size: 190px;
+
+#intro
+    padding-top: 180px
+
+    .container--intro
+        padding-bottom: 630px;
+        padding-top: 100px
+
+        .links 
+            a
+                color: white
+                font-size: 18px
+                font-weight: 600
+                text-decoration: none
+                cursor: pointer
+
+            .links_follow_us
+                margin-right: 10px
+
+            .links_insta 
+                margin-right: 10px
+
+            .links_rotate
+                transform: rotate(90deg)
+                min-width: 150px
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 100%
+                padding-top:    90%
+            .links_twitter , .links_insta
+                transform: rotate(270deg)
+        
+        .intro--title
+            display: flex
+            width: 100%
+            height: 100%
+            align-items: flex-start
+            justify-content: center
+            justify-content: start
+            flex-direction: column
+
+            .intro_top_title
+                font-family: Gilroy-Heavy
+                text-transform: uppercase
+                font-style: 18px
+                letter-spacing: 6px
+                color: #FBD784
+                padding-left: 105px
+                position: relative
+
+            .intro_top_title p:before
+                position: absolute
+                content: ''
+                height: 5px
+                width: 100px
+                background-color: #FBD784
+                bottom : 55%
+                left: -3%
+                z-index: 2
+            
+            .intro_title
+                font-family: Chronicle
+                color: white
+                font-size: 88px
+                max-width: 900px
+                margin-bottom: 
+
+            .intro_bottom_title
+                position: relative
+                
+                a 
+                    color: white
+                    text-decoration: none
+                    font-style: 18px
+                    font-family: Gilroy-Heavy
+
+                .intro_bottom_title_arrow
+                    position: absolute
+                    font-size: 30px
+                    font-family: Gilroy-Medium
+                    color: white
+                    top: -30%
+                    right: -30%
+                    transition: all linear 0.6s
+
+            .intro_bottom_title a:hover + span
+                transform: translateY(50px)
+                opacity: .2
+                
+        .nav_link  
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            width: 100%
+
+            ul
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                list-style: none
+
+                li
+                    a
+                        text-decoration: none
+                        color: white
+                        font-style: 18px
+                        font-family: Gilroy-Hard
+                    
+                    border-right: 3px solid rgba(255, 255 , 255 , .6)
+                    
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    min-width: 90px
+                    min-height: 70px
+                
+                li.active
+                    border-right: 3px solid rgba(255, 255 , 255 , 1)
