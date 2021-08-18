@@ -9,11 +9,14 @@
 body::-webkit-scrollbar
     width: 0
 
+body
+    background-color: #354147
+
 .header_image
-    background: url('../images/all.png') no-repeat center
-    height: 100%
+    background: url('../images/all.png') no-repeat center 
     width: 100%
     background-size: cover
+    position: relative
 
 .header
     padding-top: 50px
@@ -35,7 +38,9 @@ body::-webkit-scrollbar
         font-family: Gilroy-Hard
         a
             color: white
+            text-decoration: none
     .account
+        cursor: pointer
         font-family: Gilroy-Hard
         color: white
         .account_icon
@@ -106,7 +111,6 @@ body::-webkit-scrollbar
                 color: white
                 font-size: 88px
                 max-width: 900px
-                margin-bottom: 
 
             .intro_bottom_title
                 position: relative
@@ -162,3 +166,123 @@ body::-webkit-scrollbar
                 
                 li.active
                     border-right: 3px solid rgba(255, 255 , 255 , 1)
+
+.step_1
+    padding-bottom: 200px
+    .step_info
+        position: relative
+
+        .step_number
+            position: absolute
+            color: white
+            font-size: 260px
+            color: rgba(255,255,255, .4)
+            top: -20%
+            left: -30%
+        
+        .step_top_title
+            font-family: Gilroy-Heavy
+            text-transform: uppercase
+            font-style: 18px
+            letter-spacing: 6px
+            color: #FBD784
+            padding-left: 105px
+            position: relative
+            margin-bottom: 50px
+
+        .step_top_title:before
+            position: absolute
+            content: ''
+            height: 5px
+            width: 100px
+            background-color: #FBD784
+            bottom : 15%
+            left: -3%
+
+        .step_title
+            font-family: Chronicle
+            color: white
+            font-size: 64px
+            max-width: 900px
+            padding-bottom: 30px
+        
+        .step_content
+            color: white
+            font-size: 18px
+            font-family: Gilroy-Heavy
+            letter-spacing: .1em
+
+        .step_bottom_title
+            font-size: 18px
+            font-family: Gilroy-Heavy
+            letter-spacing: .1em
+            color: rgba(251, 215, 132, 1)
+
+            a
+                color: rgba(251, 215, 132, 1)
+                text-decoration: none
+                
+
+            .step_arrow
+                transition: all linear .6s
+
+            .step_read_more:hover + .step_arrow
+                opacity: .3
+                transform: translateX( 30px )
+
+    .image_1   
+        max-height: 720px    
+
+    .step_info--2 
+        padding-left: 200px
+        min-width: 700px    
+
+
+.step_info--2
+    .step_2--number
+        left: 5% !important
+        top: -20% !important
+
+.footer
+    background-color:  #0A1C27
+    padding-bottom: 40px
+    padding-top: 20px
+    min-height: 300px !important
+
+    .footer_content
+        display: flex
+        justify-content: start
+        flex-direction: column
+
+        .footer_content_main
+            padding-bottom: 120px   
+
+            .title
+                font-family: Chronicle
+                color: white
+                font-size: 32px
+            .text   
+                color: white
+                font-size: 18px
+                font-family: Gilroy-Hard
+                max-width: 300px
+        .footer_subtitle
+            font-size: 18px
+            color: rgba( 255 , 255 , 255 , .6)
+
+    .footer_blog , .footer_more
+        li 
+            font-size: 18px
+            margin-bottom: 10px 
+
+            a
+                color: white
+                text-decoration: none
+
+            p
+                font-family: Gilroy-Hard
+                color: rgba(251, 215, 132, 1)
+    .more--ul   
+        min-width: 200px
+                
+            
